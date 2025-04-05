@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent-color: #cae9ff;
+    --text-color: #5fa8d3;
+    --highlight-color: #ff6b6b;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 140px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.company-info, .employees, .contact-form {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2a2a2a;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.employee-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the employees horizontally */
+    text-align: center; /* Center text under images */
+}
+
+.employee {
+    display: flex;
+    flex-direction: column; /* Stack image, name, and role */
+    align-items: center; /* Center align everything */
+    width: 200px; /* Ensure equal width */
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.employee p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.employee .role {
+    font-size: 0.9em;
+    color: #2a2a2a;
+    font-weight: normal;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer p {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    padding-left: 10%;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 10px;
+    /* Adds space between icons */
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}

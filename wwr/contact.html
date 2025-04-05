@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Whitewater Rafting Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleContactUs.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/logo.jpeg" alt="Whitewater Rafting Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 1129 N Brady St, Davenport, IA 52803, USA</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+            
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1493.3729562085905!2d-90.57453617238701!3d41.53144419641027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87e2349024a52a45%3A0x1287d34d5ad23340!2s1129%20N%20Brady%20St%2C%20Davenport%2C%20IA%2052803%2C%20USA!5e0!3m2!1sen!2sbr!4v1743828549575!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <div class="employee-list">
+                <div class="employee">
+                    <img src="images/john_doe.png" alt="John Doe">
+                    <p>John Doe</p>
+                    <p class="role">Tour Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="images/sarah_thompson.png" alt="Sarah Thompson">
+                    <p>Sarah Thompson</p>
+                    <p class="role">Safety Instructor</p>
+                </div>
+                <div class="employee">
+                    <img src="images/alex_brown.png" alt="Alex Brown">
+                    <p>Alex Brown</p>
+                    <p class="role">Customer Support</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label>Purpose of Message:</label>
+                <div class="radio-group">
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
+    
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
+    
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <div class="checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+    
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>© 2025 Whitewater Rafting. All Rights Reserved. Student Name</p>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
